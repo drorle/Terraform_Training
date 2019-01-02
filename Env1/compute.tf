@@ -21,8 +21,8 @@ resource "aws_instance" "instance" {
 
   provisioner "remote-exec" {
     inline = [
-#      "sudo apt-get update",
-#      "sudo apt-get install -y nginx",
+      "sudo apt-get update",
+      "sudo apt-get install -y python",
 #      "echo '<html><head><title>Blue Team Server</title></head><body style=\"background-color:#1F778D\"><p style=\"text-align: center;\"><span style=\"color:#FFFFFF;\"><span style=\"font-size:28px;\">Blue Team</span></span></p></body></html>' | sudo tee /var/www/html/index.nginx-debian.html"
     ]
   }
